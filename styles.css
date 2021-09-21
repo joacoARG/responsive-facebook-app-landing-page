@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200,300,400,500,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 * {
   margin: 0;
@@ -31,7 +31,7 @@ header {
   justify-content: flex-start;
   align-items: center;
 }
-header .logo {
+header .logo img {
   max-width: 50px;
   margin-right: 20px;
 }
@@ -40,10 +40,126 @@ header ul {
 }
 header ul li {
   list-style: none;
-  margin-right: 0 10px;
+  margin: 0px 10px;
 }
 header ul li a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
+}
+
+header ul li a:hover,
+header ul li a:active {
+  color: #2d88ff;
+}
+
+.app {
+  position: absolute;
+  right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #3b5998;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.app:hover {
+  background: #2d88ff;
+  color: #fff;
+}
+.app ion-icon {
+  margin-right: 10px;
+  font-size: 1.4em;
+}
+.contentBx {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contentBx .text {
+  max-width: 800px;
+}
+.contentBx .text h2 {
+  font-size: 6em;
+  color: #3b5998;
+}
+.contentBx .text p {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.8em;
+}
+.contentBx .text h4 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-weight: 700;
+  color: #333;
+}
+.btn {
+  background: #3b5998;
+  color: #fff;
+  display: inline-flex;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 1.1em;
+  margin: 5px 20px 5px 0;
+  border-radius: 5px;
+}
+.btn:hover {
+  background: #2d88ff;
+}
+.btn ion-icon {
+  margin-right: 10px;
+  font-size: 1.4em;
+}
+
+.imgBx img {
+  margin-left: 50px;
+  margin-right: 100px;
+  max-width: 300px;
+  display: none;
+}
+
+.imgBx img.active {
+  display: block;
+}
+
+.dots {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.dots .dot {
+  position: relative;
+  width: 10px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.25);
+  display: inline-flex;
+  margin: 5px;
+  cursor: pointer;
+}
+.dots .dot.active {
+  background: #fff;
+}
+.sci {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+}
+.sci li {
+  list-style: none;
+  margin-right: 20px;
+}
+.sci li a {
+  font-size: 1.8em;
+  color: #3b5998;
+}
+.sci li a:hover {
+  color: #2d88ff;
 }
